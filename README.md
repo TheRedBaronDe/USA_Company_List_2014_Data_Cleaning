@@ -13,7 +13,7 @@ It also had a long and overly complicated name, which I shortened for practicali
 
 **Queries**
 
-'''sql
+```sql
 1. -- rename table.
 
 ALTER TABLE Data Set- Inc5000 Company List_2014.csv to Company_List_2014;
@@ -44,4 +44,5 @@ ALTER TABLE Company_List_2014
 DROP COLUMN _source; (Identical to _widgetName)
 
 ALTER TABLE Company_List_2014
-DROP COLUMN _resultNumber; (Identical to num)'''
+DROP COLUMN _resultNumber; (Identical to num)
+```
