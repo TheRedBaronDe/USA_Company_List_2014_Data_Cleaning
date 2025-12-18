@@ -1,3 +1,8 @@
+/* Project: Data Set- Inc5000 Company List_2014
+Tool: SQLite
+Author: Victoria Silva (TheRedBaronDe)
+*/
+
 1. -- rename table.
 
 ALTER TABLE Data Set- Inc5000 Company List_2014.csv to Company_List_2014;
