@@ -5,7 +5,9 @@ I used the Pandas library for all the cleaning done, all that using Sublime.
 
 **Why clean it?**
 
-The dataset contained lots of null values and some wrong stored data. It also lacked a date formatting for its "date_added" column.
+The dataset contained lots of null values and some wrong stored data.
+The "rating" column for the director "Louis C.K" was filled with the durations of his movies. 
+It also lacked a date formatting for its "date_added" column.
 
 ```python
 
