@@ -1,0 +1,8 @@
+SQLite Browser (https://sqlitebrowser.org/dl/)
+
+Sublime (https://www.sublimetext.com/download)
+
+Python (https://www.python.org/downloads/)
+
+Pandas (https://pandas.pydata.org/docs/getting_started/install.html)
+pip install pandas
