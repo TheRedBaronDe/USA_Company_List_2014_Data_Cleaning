@@ -6,14 +6,19 @@ The goal was to improve readability, consistency, and query efficiency, enabling
 **Dataset**
 
 **Source:** Tableau Public Library
+
 **Description:** Information about the top 5,000 U.S. companies in 2014
+
 **Format:** CSV imported into SQLite
+
 **Scope:** Company metadata, rankings, and financial attributes
 
 **Tools & Technologies**
 
 **Database:** SQLite
+
 **Language:** SQL
+
 **Environment:** Local database for data preparation and transformation
 
 **Cleaning Process**
