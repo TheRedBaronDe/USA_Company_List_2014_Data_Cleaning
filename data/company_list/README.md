@@ -4,14 +4,12 @@
 The goal was to improve readability, consistency, and query efficiency, enabling reliable exploratory and analytical work.
 
 **Dataset**
-
 **Source:** Tableau Public Library
 **Description:** Information about the top 5,000 U.S. companies in 2014
 **Format:** CSV imported into SQLite
 **Scope:** Company metadata, rankings, and financial attributes
 
 **Tools & Technologies**
-
 **Database:** SQLite
 **Language:** SQL
 **Environment:** Local database for data preparation and transformation
@@ -28,12 +26,14 @@ Organized schema to improve query readability and maintainability
 All transformations were performed using SQL queries.
 
 **Outcomes**
+
 The cleaned dataset is easier to explore and query
 Improved schema readability during analysis
 Queries are simpler, clearer, and less error-prone
 Dataset is now suitable for downstream analysis and visualization
 
 **Improvements**
+
 The dataset does not include a time dimension (month or quarter)
 
 Adding a date or month column would enable:
