@@ -9,6 +9,10 @@ The dataset contained lots of null values and some wrong stored data.
 The "rating" column for the director "Louis C.K" was filled with the durations of his movies. 
 It also lacked a date formatting for its "date_added" column.
 
+**What could be improved?**
+
+A "Month" column could be added for further trends analysis, as well as a "Category" column.
+
 ```python
 
 import pandas as pd
