@@ -8,8 +8,11 @@ I used SQLite for all the data cleaning queries.
 
 **Why clean it?**
 
-It wasn't a very messy dataset, but it contained some irrelevant and repetitive columns.
-It also had a long and overly complicated name, which I shortened for practicality.
+It contained some irrelevant and repetitive columns, as well as a long and overly complicated name, which I shortened for practicality.
+By cleaning this dataset, the data becomes much more readable and easier to query.
+
+**What could be improved?**
+It would be highly important if a "Month" column were added, so the dataset could be analysed by months and quarters, compare trends, holiday's seasons and more.
 
 **Queries**
 
