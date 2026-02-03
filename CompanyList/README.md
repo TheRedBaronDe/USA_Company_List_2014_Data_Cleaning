@@ -15,11 +15,13 @@ Format: CSV imported into SQLite
 Scope: Company metadata, rankings, and financial attributes
 
 
-**Tools & Technologies**
+**Tools**
 
-Database: SQLite
+Cleaning: SQLite
 
-Language: SQL
+Visualization: Sublime
+
+Language: SQL, Python
 
 Environment: Local database for data preparation and transformation
 
