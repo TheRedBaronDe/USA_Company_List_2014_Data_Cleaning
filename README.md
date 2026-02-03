@@ -21,11 +21,13 @@ Writing clear, reproducible analysis
 
 Languages: Python, SQL
 
-Libraries: Pandas, NumPy, Matplotlib, Seaborn
+Libraries: Pandas, NumPy, Matplotlib, Seaborn 
 
-Databases: SQLite
+Databases: SQLite, PostgreSQL
 
 Spreadsheets: Excel, Google Sheets
+
+Python: Sublime Text
 
 Visualization: Tableau
 
