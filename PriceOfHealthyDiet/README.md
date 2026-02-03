@@ -1,4 +1,4 @@
-# Data Cleaning - Price Of Healthy Diet (2017-2014)
+# Price Of Healthy Diet (2017-2014)
 **Project Overview**
 
 The goal was to improve readability, consistency, and query efficiency, enabling reliable exploratory and analytical work.
