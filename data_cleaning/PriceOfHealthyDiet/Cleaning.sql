@@ -46,7 +46,7 @@ ORDER BY year; -- by ordering by year we can confirm that the dataset contains d
 SELECT COUNT(DISTINCT country)
 FROM public."PriceOfHealthyDiet";
 
--- Check for duplicated values in "country"
+-- Check for duplicated values in "country" and "year"
 
 SELECT country, year, COUNT(*)
 FROM public."PriceOfHealthyDiet"
