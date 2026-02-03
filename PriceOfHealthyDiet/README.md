@@ -50,7 +50,3 @@ Visualization: Sublime
 Language: SQL, Python
 
 Environment: Local database for data preparation and transformation
-
-# Cleaning process
-
-The dataset was already clean and organised as it's possible to observe throught the exploratory data analysis queries.
