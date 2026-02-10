@@ -28,7 +28,7 @@ SELECT COUNT(*) FROM public."PriceOfHealthyDiet"; -- count all the values import
 SELECT * FROM public."PriceOfHealthyDiet" 
 LIMIT 5; -- show the first five rows
 
--- Check for null values
+-- Check for null values in the most important columns
 
 SELECT
 COUNT(*) FILTER (WHERE country IS NULL) AS null_country,
