@@ -35,13 +35,6 @@ Visualization: Tableau
 
 Projects focused on improving data quality, consistency, and usability.
 
-Company List
-
-SQL-based data cleaning using SQLite.
-Focus on schema simplification, column standardization, and query efficiency.
-
-Netflix Titles Dataset
-
 Python (Pandas) data cleaning and validation.
 Identification of missing values, incorrect data, and date standardization.
 
