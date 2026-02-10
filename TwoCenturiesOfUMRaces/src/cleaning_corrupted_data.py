@@ -12,9 +12,18 @@ df = pd.read_csv(
     encoding='utf-8' # defines an enconding that supports international characters and prevents breaking/corruption
 )
 
-print(len(df)) # prints the number of loaded rows, allowing you to verify lost rows and compare its size to the expectedd value of the full dataset
+for col in df.select_dtypes(include='object').columns: # selects TEXT columns
+    df[col] = (
+        df[col]
+        .astype(str) # converts to string
+        .str.replace('"', '', regex=False) # removes double quotes inside the strings
+        .str.replace("'", '', regex=False) # removes singular quotes inside the strings
+    )
 
 df.to_csv(
     r"C:\\Users\\User\\Documents\\PostgreSQL\\TWO_CENTURIES_OF_UM_RACES_CLEAN.csv", # saves the cleaned dataset so it can be imported into pgAdmin 4
     index=False # prevents Pandas from writing extra columns
+    encoding='utf-8' # applies an international character encoding
 )
+
+print(len(df)) # prints the number of loaded rows, allowing you to verify lost rows and compare its size to the expectedd value of the full dataset
