@@ -1,1 +1,71 @@
+# Two Centuries of Ultra Marathon Races (ongoing project)
+** Project Overview**
 
+The goal was to improve readability, consistency, and query efficiency, enabling reliable exploratory and analytical work.
+
+**Dataset**
+
+Source: Kaggle (https://www.kaggle.com/datasets/aiaiaidavid/the-big-dataset-of-ultra-marathon-running/code)
+
+Description: The data in this file is a large collection of ultra-marathon race records registered between 1798 and 2022 (a period of well over two centuries) being therefore a formidable long term sample. All data was obtained from public websites.
+
+Format: CSV
+
+Scope: Sports
+
+**This analysis aim to answer**
+
+Did marathon runners get faster throughout these two centuries?
+
+Which countries have the fastest runners?
+
+How much influence does a region have in a marathon?
+
+What are the performance differences based on gender?
+
+**Tools**
+
+Cleaning: pgAdmin 4, Python (Pandas) using Sublime Text
+
+Visualization: Sublime Text, Tableau
+
+Language: SQL, Python
+
+Environment: Local database for data preparation and transformation
+
+# Cleaning
+
+The cleaning was rather difficult due to inconsistent characters inside the original CSV file, making it impossible to import into pgAdmin 4 at first. So I cleaned it using Pandas by skiping rows that could not be parsed and removing double and singular quotation marks inside strings/text.
+
+```python
+
+import pandas as pd # import pandas to manipulate data and clean it so it can be imported into pgAdmin 4
+
+file_path = r"C:\\Users\\User\\Documents\\PostgreSQL\\TWO_CENTURIES_OF_UM_RACES.csv"
+
+df = pd.read_csv(
+    file_path,
+    engine="python", # forces Pandas to read the CSV file as a Python based parser
+    sep=",", # separates each column with a comma
+    quotechar='"', # tells Pandas that double quotes means strings/text, meaning that any commas inside double quotes should be treated as text as well
+    escapechar='\\', # defines how to deal with escaped characters
+    on_bad_lines='skip', # extremely important, tells Pandas to skip any row that cannot be parsed
+    encoding='utf-8' # defines an enconding that supports international characters and prevents breaking/corruption
+)
+
+for col in df.select_dtypes(include='object').columns: # selects TEXT columns
+    df[col] = (
+        df[col]
+        .astype(str) # converts to string
+        .str.replace('"', '', regex=False) # removes double quotes inside the strings
+        .str.replace("'", '', regex=False) # removes singular quotes inside the strings
+    )
+
+df.to_csv(
+    r"C:\\Users\\User\\Documents\\PostgreSQL\\TWO_CENTURIES_OF_UM_RACES_CLEAN.csv", # saves the cleaned dataset so it can be imported into pgAdmin 4
+    index=False # prevents Pandas from writing extra columns
+    encoding='utf-8' # applies an international character encoding
+)
+
+print(len(df)) # prints the number of loaded rows, allowing you to verify lost rows and compare its size to the expectedd value of the full dataset
+```
