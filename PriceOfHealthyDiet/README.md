@@ -45,7 +45,7 @@ Affordability Crisis: In many low-income countries, a healthy diet costs more th
 
 Cleaning: pgAdmin 4
 
-Visualization: Sublime
+Visualization: Sublime, Tableau (https://public.tableau.com/app/profile/vicsilva42/viz/PriceOfAHealthyDiet-GlobalOverview/Dashboard2)
 
 Language: SQL, Python
 
