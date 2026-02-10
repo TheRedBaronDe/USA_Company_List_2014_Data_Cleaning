@@ -13,6 +13,14 @@ Format: CSV imported into pgAdmin 4
 
 Scope: World health and economy analysis
 
+**This analysis aims to answer:**
+
+How has the cost of a healthy diet evolved globally between 2017–2024?
+
+Which regions have the highest average costs?
+
+Which countries show extreme values?
+
 **What is PPP (Purchasing Power Parity)?**
 
 PPP adjusts for differences in price levels between countries, making costs internationally comparable. A PPP dollar represents the same purchasing power in every country, unlike regular exchange rates.
