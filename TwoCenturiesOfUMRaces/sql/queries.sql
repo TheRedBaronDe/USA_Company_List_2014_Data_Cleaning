@@ -15,3 +15,9 @@ CREATE TABLE public."TwoCenturiesOfUMRaces" ( -- creates new table
     athlete_average_speed    TEXT,
     athlete_id               BIGINT
 ); 
+
+-- Check if the data was correctly imported
+
+SELECT COUNT(*) FROM public."TwoCenturiesOfUMRaces"; -- count all the values imported
+SELECT * FROM public."TwoCenturiesOFUMRaces" 
+LIMIT 5; -- show the first five rows
