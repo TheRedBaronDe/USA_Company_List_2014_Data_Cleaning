@@ -1,4 +1,13 @@
+/* Project: Two Centuries Of Ultra Marathon Races (1798-2022) - Kaggle Dataset
+Tools: pgAdmin 4
+Author: Victoria Silva (TheRedBaronDe)
+
+Objective: Make a exploratory data analysis of the dataset to identify data quality issues and ensure its consistency.
+*/
+
 DROP TABLE IF EXISTS public."TwoCenturiesOfUMRaces"; -- drops table from previous attempt to import the CSV data
+
+-- Create matching columns with the correct data type so it's possible to import the dataset
 
 CREATE TABLE public."TwoCenturiesOfUMRaces" ( -- creates new table
     year_of_event            INTEGER,
@@ -22,3 +31,5 @@ SELECT COUNT(*) FROM public."TwoCenturiesOfUMRaces"; -- count all the values imp
 
 SELECT * FROM public."TwoCenturiesOFUMRaces" 
 LIMIT 5; -- show the first five rows
+
+-- Check for null values
