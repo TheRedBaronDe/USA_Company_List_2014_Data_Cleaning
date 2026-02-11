@@ -21,4 +21,14 @@ pd.set_option('display.float_format', '{:.2f}'.format) # round floats up to two 
 
 # Load the cleaned dataset
 df = pd.read_csv('C:\\Users\\User\\Documents\\PostgreSQL\\TWO_CENTURIES_OF_UM_RACES_CLEAN.csv', low_memory=False) # opens the data file path and reads all the data at once, instead of reading it in chunks
+
+# Basic information
 print(df.head()) # prints first rows
+print("="*70)
+print("DATASET INFORMATION")
+print("="*70)
+print(df.info())
+print("\n" + "="*70)
+print("DATA TYPES")
+print("="*70)
+print(df.dtypes)
