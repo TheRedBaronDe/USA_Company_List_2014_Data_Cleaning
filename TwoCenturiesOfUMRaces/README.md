@@ -1,5 +1,5 @@
 # Two Centuries of Ultra Marathon Races (ongoing project)
-** Project Overview**
+**Project Overview**
 
 The goal was to improve readability, consistency, and query efficiency, enabling reliable exploratory and analytical work.
 
