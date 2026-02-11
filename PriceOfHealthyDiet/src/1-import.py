@@ -21,4 +21,14 @@ pd.set_option('display.float_format', '{:.2f}'.format) # round floats up to two 
 
 # Load the cleaned dataset
 df = pd.read_csv('C:\\Users\\User\\Documents\\PostgreSQL\\price_of_healthy_diet_clean.csv')
+
+# Basic information
 print(df.head()) # prints first rows
+print("="*70)
+print("DATASET INFORMATION")
+print("="*70)
+print(df.info())
+print("\n" + "="*70)
+print("DATA TYPES")
+print("="*70)
+print(df.dtypes)
