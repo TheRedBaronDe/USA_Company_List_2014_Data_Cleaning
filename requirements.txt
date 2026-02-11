@@ -1,4 +1,4 @@
-SQLite Browser (https://sqlitebrowser.org/dl/)
+PostgreSQL, including pgAdmin4 (https://www.postgresql.org/download/)
 
 Sublime (https://www.sublimetext.com/download)
 
