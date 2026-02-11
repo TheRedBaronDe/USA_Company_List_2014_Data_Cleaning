@@ -20,5 +20,5 @@ pd.set_option('display.max_rows', 100) # displays up to 100 rows
 pd.set_option('display.float_format', '{:.2f}'.format) # round floats up to two decimal places
 
 # Load the cleaned dataset
-df = pd.read_csv('C:\\Users\\User\\Documents\\PostgreSQL\\price_of_healthy_diet_clean.csv', low_memory=False) # opens the data file path and reads all the data at once, instead of reading it in chunks
+df = pd.read_csv('C:\\Users\\User\\Documents\\PostgreSQL\\price_of_healthy_diet_clean.csv')
 print(df.head()) # prints first rows
