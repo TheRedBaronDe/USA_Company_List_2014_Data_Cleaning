@@ -70,6 +70,7 @@ df.to_csv(
 print(len(df)) # prints the number of loaded rows, allowing you to verify lost rows and compare its size to the expectedd value of the full dataset
 ```
 **Analysis** 
+
 athlete_club is missing 2.8 million entries
 
 year_of_birth is missing 588k entries
