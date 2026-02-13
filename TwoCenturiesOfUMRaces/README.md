@@ -86,6 +86,12 @@ This makes up for 53.23% of the entire dataset
 # Charts
 
 ```python
+
+df['athlete_year_of_birth'] = pd.to_numeric(df['athlete_year_of_birth'], errors='coerce') 
+df['athlete_average_speed'] = pd.to_numeric(df['athlete_average_speed'], errors='coerce')
+# these lines convert columns that contains numbers into exclusively numerical values
+# "errors='coerce'" converts all invalid values into special missing values instead of returning an "error" message
+
 sample_df = df.sample(300_000, random_state=42)
 # this line creates a random sample that uses 300.000 rows from the entire dataset
 # setting an integer in "random_state=" makes sure the results always remain consistent
