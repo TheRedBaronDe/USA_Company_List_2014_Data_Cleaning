@@ -78,3 +78,9 @@ year_of_birth is missing 588k entries
 age_category is missing 584k entries
 
 This makes up for 53.23% of the entire dataset
+
+# Charts
+
+```python
+sample_df = df.sample(300_000, random_state=42)
+```
