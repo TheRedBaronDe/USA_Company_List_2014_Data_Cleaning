@@ -7,7 +7,7 @@ The goal was to improve readability, consistency, and query efficiency, enabling
 
 Source: Kaggle (https://www.kaggle.com/datasets/aiaiaidavid/the-big-dataset-of-ultra-marathon-running/code)
 
-Description: The data in this file is a large collection of ultra-marathon race records registered between 1798 and 2022 (a period of well over two centuries) being therefore a formidable long term sample. All data was obtained from public websites.
+Description: The data in this file is a large collection (7,461,195 rows) of ultra-marathon race records registered between 1798 and 2022 (a period of well over two centuries) being therefore a formidable long term sample. All data was obtained from public websites.
 
 Format: CSV
 
@@ -71,6 +71,10 @@ print(len(df)) # prints the number of loaded rows, allowing you to verify lost r
 ```
 # Analysis 
 
+The entire dataset has 7,461,195 rows
+
+260 rows are duplicated, making up for 0.00348469649% of the full dataset
+
 athlete_club is missing 2.8 million entries
 
 year_of_birth is missing 588k entries
@@ -83,4 +87,11 @@ This makes up for 53.23% of the entire dataset
 
 ```python
 sample_df = df.sample(300_000, random_state=42)
+# this line creates a random sample that uses 300.000 rows from the entire dataset
+# setting an integer in "random_state=" makes sure the results always remain consistent
+# this line is extremely important as we're dealing with a very large dataset (over 7M rows) and using the entire
+# dataset could lead to memory and performance issues, as well as crashes
+
+plt.tight_layout()
+# this line automatically adjusts parameters to avoid overlapping
 ```
