@@ -84,7 +84,7 @@ sns.scatterplot(
     x='athlete_age',
     y='athlete_average_speed',
     alpha=0.3, # controls transparency
-    s=10 # sets the size of the dots to "10"/small
+    s=10 # sets the size of the dots to "10"/small, making it easily readable
 )
 plt.title("Athlete Speed x Age")
 plt.xlabel("Age")
